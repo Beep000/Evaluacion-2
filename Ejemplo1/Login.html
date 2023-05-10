@@ -8,7 +8,7 @@
 <body>
 	<section class="container">
 		<div class="row">
-		<h3 class="center-align">CONTACTO</h3>
+		<h3 class="center-align">Login</h3>
 			<article class="col s6 offset-s3">
 				<form method="POST" action="formulario-contacto.php">
 					<div class="input-field">
@@ -17,11 +17,6 @@
 						<input type="text" name="nombre" required>
 					</div>
 
-					<div class="input-field">
-						<i class="material-icons prefix">person_pin</i>
-						<label for="apellido">Apellido</label>
-						<input type="text" name="apellido" required>
-					</div>
 					
 					<div class="input-field">
 						<i class="material-icons prefix">email</i>
@@ -30,13 +25,28 @@
 					</div>
 
 					<div class="input-field">
-						<i class="material-icons prefix">mode_edit</i>
-						<label for="mensaje">Mensaje</label>
-						<textarea name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+						<i class="material-icons prefix">lock</i>
+						<label for="Contraseña">Contraseña</label>
+						<input type="password"	name="password"	required>
 					</div>
 					
 					<p class="center-align">
 						<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+					</p>
+
+					<p class="center-align">
+						<button onclick="window.location.href='registro.html';" class="waves-effect waves-light btn" type="button"> <i class="material-icons right">assignment_ind</i>¿No tienes cuenta? Registrate </button>
+						
+					</p>
+
+					<p class="center-align">
+						<button onclick="window.location.href='recup.html';" class="waves-effect waves-light btn" type="button"> <i class="material-icons right">lock_person</i>¿Olvidaste tu contraseña?</button>
+						
+					</p>
+
+					<p class="center-align">
+						<button onclick="window.location.href='index.html';" class="waves-effect waves-light btn" type="button"> <i class="material-icons right">arrow_back</i>Volver</button>
+						
 					</p>
 
 				</form>
